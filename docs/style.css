@@ -387,3 +387,45 @@ h2 {
   box-shadow: 0 30px 60px rgba(123,97,255,0.25);
   color: #7b61ff;
 }
+
+/* ВЗРЫВ КАПЕЛЬ */
+
+.photo-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.paint-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.paint-drop {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+  animation: explode 0.9s ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(
+      calc(-50% + var(--x)),
+      calc(-50% + var(--y))
+    ) scale(0.6);
+  }
+}
