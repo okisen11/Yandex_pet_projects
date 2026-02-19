@@ -1,110 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Миша Рожков | Аналитик данных</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Миша Рожков | Аналитик данных</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar">
+<nav>
+  <div class="logo">Mi.</div>
+  <div class="menu">
     <a href="#hero">Главная</a>
     <a href="#about">Обо мне</a>
-
-    <div class="dropdown">
-        <a href="#projects" class="dropbtn">Проекты</a>
-        <div class="dropdown-content">
-            <a href="#sql-project">SQL</a>
-            <a href="#python-project">Python</a>
-            <a href="#bi-project">Power BI</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <a href="#contacts" class="dropbtn">Контакты</a>
-        <div class="dropdown-content">
-            <a href="https://t.me/wokkitokki" target="_blank">Telegram</a>
-            <a href="mailto:okisen@vk.com">Email</a>
-            <a href="https://github.com/okisen11/" target="_blank">GitHub</a>
-            <a href="ССЫЛКА_НА_HH" target="_blank">HH</a>
-        </div>
-    </div>
+    <a href="#projects">Проекты</a>
+    <a href="#contacts">Контакты</a>
+  </div>
 </nav>
 
-<section id="hero" class="hero">
-    <img src="photo.jpg" alt="Миша Рожков" class="avatar">
-    <h1>Миша Рожков</h1>
-    <h2>Аналитик данных | Продуктовый аналитик</h2>
+<section class="hero" id="hero">
+  <img src="images/photo.jpg" alt="Фото">
+  <h1>Миша <span>Рожков</span></h1>
+  <p class="subtitle">Аналитик данных | Продуктовый аналитик</p>
+
+  <div class="tags">
+    <span class="tag sql">SQL</span>
+    <span class="tag python">Python</span>
+    <span class="tag powerbi">Power BI</span>
+    <span class="tag excel">Excel</span>
+  </div>
 </section>
 
-<section id="about">
-    <h3>Обо мне</h3>
+<section class="about" id="about">
+  <h2>Обо мне</h2>
+  <p>
+    Мой путь — развитие в аналитике данных. Работаю с SQL, Python и BI-инструментами,
+    превращая цифры в понятные решения для бизнеса.
+  </p>
 
-    <p>
-        Развиваюсь в аналитике данных и продуктовой аналитике.
-        Работаю с SQL, Python и BI-инструментами для решения реальных бизнес-задач.
-    </p>
-
-    <p>
-        Строю витрины данных, рассчитываю метрики, анализирую поведение пользователей,
-        автоматизирую отчётность и превращаю данные в систему принятия решений.
-    </p>
-
-    <h4>Ключевые достижения</h4>
-    <ul>
-        <li>Повысил удержание клиентов на 15% через внедрение триггеров оттока.</li>
-        <li>Разработал сегментацию клиентов на основе продуктовых показателей.</li>
-        <li>Автоматизировал отчётность, сократив более 20 часов ручной работы в месяц.</li>
-        <li>Оптимизировал обучение через анализ воронки и поведения.</li>
-    </ul>
-
-    <h4>Hard Skills</h4>
-    <ul>
-        <li>SQL: JOIN, CTE, агрегации, расчёт метрик.</li>
-        <li>Python: pandas, numpy, seaborn, matplotlib.</li>
-        <li>Power BI: построение дашбордов.</li>
-        <li>Excel и базовая статистика.</li>
-    </ul>
-
-    <p class="highlight">
-        Ищу junior-позицию в аналитике данных / продуктовой аналитике.
-        Готов подключиться к реальной задаче и показать результат.
-    </p>
+  <div class="achievements">
+    <div class="card">+15% удержание клиентов</div>
+    <div class="card">Глубокая сегментация</div>
+    <div class="card">-20ч автоматизация</div>
+    <div class="card">Оптимизация воронки</div>
+  </div>
 </section>
 
-<section id="projects">
-    <h3>Проекты</h3>
+<section class="projects" id="projects">
+  <h2>Проекты</h2>
 
-    <div id="sql-project" class="project">
-        <h4>SQL — Анализ оттока</h4>
-        <p>Построение витрины, расчёт churn, анализ триггеров.</p>
-        <a href="ССЫЛКА_SQL" target="_blank">Открыть проект</a>
+  <div class="project">
+    <div class="preview sql-bg">Оптимизация баз данных</div>
+    <div class="content">
+      <h3>SQL</h3>
+      <p>Сложные SQL-запросы, оптимизация производительности, аналитика больших объёмов данных.</p>
     </div>
+  </div>
 
-    <div id="python-project" class="project">
-        <h4>Python — Продуктовые метрики</h4>
-        <p>EDA, retention, визуализация гипотез.</p>
-        <a href="ССЫЛКА_PYTHON" target="_blank">Открыть проект</a>
+  <div class="project reverse">
+    <div class="preview python-bg">Автоматизация с Python</div>
+    <div class="content">
+      <h3>Python</h3>
+      <p>Автоматизация ETL-процессов, анализ метрик с использованием pandas и numpy.</p>
     </div>
+  </div>
 
-    <div id="bi-project" class="project">
-        <h4>Power BI — Дашборд KPI</h4>
-        <p>Интерактивная аналитическая панель.</p>
-        <a href="ССЫЛКА_BI" target="_blank">Открыть проект</a>
+  <div class="project">
+    <div class="preview powerbi-bg">Аналитика в Power BI</div>
+    <div class="content">
+      <h3>Power BI</h3>
+      <p>Создание интерактивных дашбордов для визуализации KPI.</p>
     </div>
+  </div>
 </section>
 
-<section id="contacts">
-    <h3>Контакты</h3>
-
-    <a href="https://t.me/wokkitokki" target="_blank" class="btn">Telegram</a>
-    <a href="mailto:okisen@vk.com" class="btn secondary">Email</a>
-    <a href="https://github.com/okisen11/" target="_blank" class="btn secondary">GitHub</a>
-    <a href="ССЫЛКА_НА_HH" target="_blank" class="btn">Резюме на HH</a>
+<section class="contacts" id="contacts">
+  <h2>Контакты</h2>
+  <div class="contact-buttons">
+    <a href="https://t.me/yourusername" target="_blank">Telegram</a>
+    <a href="mailto:your@email.com">Email</a>
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    <a href="#">HH</a>
+  </div>
 </section>
 
 </body>
 </html>
-
 </body>
 </html>
