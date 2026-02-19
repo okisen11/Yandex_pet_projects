@@ -10,8 +10,25 @@
 <nav class="navbar">
     <a href="#hero">Главная</a>
     <a href="#about">Обо мне</a>
-    <a href="#projects">Проекты</a>
-    <a href="#contacts">Контакты</a>
+
+    <div class="dropdown">
+        <a href="#projects">Проекты</a>
+        <div class="dropdown-content">
+            <a href="#sql-project">SQL проект</a>
+            <a href="#python-project">Python проект</a>
+            <a href="#bi-project">Power BI проект</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#contacts">Контакты</a>
+        <div class="dropdown-content">
+            <a href="https://t.me/wokkitokki" target="_blank">Telegram</a>
+            <a href="mailto:okisen@vk.com">Email</a>
+            <a href="https://github.com/okisen11/" target="_blank">GitHub</a>
+            <a href="ССЫЛКА_НА_HH" target="_blank">HH</a>
+        </div>
+    </div>
 </nav>
 
 <section id="hero" class="hero">
@@ -30,44 +47,50 @@
 
     <p>
         Строю витрины данных, рассчитываю метрики, анализирую поведение пользователей,
-        автоматизирую отчётность и превращаю хаос в понятную систему.
+        автоматизирую отчётность и превращаю данные в систему принятия решений.
     </p>
 
     <h4>Ключевые достижения</h4>
     <ul>
-        <li>Повысил удержание клиентов на 15% через внедрение системы ранних триггеров оттока.</li>
-        <li>Разработал сегментацию B2B-клиентов на основе продуктовых показателей.</li>
-        <li>Автоматизировал отчётность, сократив ручной сбор данных более чем на 20 часов в месяц.</li>
-        <li>Оптимизировал подход к обучению через анализ воронки и поведения клиентов.</li>
+        <li>Повысил удержание клиентов на 15% через внедрение триггеров оттока.</li>
+        <li>Разработал сегментацию клиентов на основе продуктовых показателей.</li>
+        <li>Автоматизировал отчётность, сократив более 20 часов ручной работы в месяц.</li>
+        <li>Оптимизировал обучение через анализ воронки и поведения.</li>
     </ul>
 
     <h4>Hard Skills</h4>
     <ul>
-        <li>SQL: JOIN, CTE, сложные запросы, агрегации, расчёт метрик.</li>
+        <li>SQL: JOIN, CTE, агрегации, расчёт метрик.</li>
         <li>Python: pandas, numpy, seaborn, matplotlib.</li>
-        <li>Power BI: построение дашбордов и KPI.</li>
-        <li>Excel: сводные таблицы, формулы, подготовка данных.</li>
-        <li>Статистика: A/B тестирование, корреляция, доверительные интервалы.</li>
+        <li>Power BI: построение дашбордов.</li>
+        <li>Excel и базовая статистика.</li>
     </ul>
 
     <p class="highlight">
         Ищу junior-позицию в аналитике данных / продуктовой аналитике.
-        Готов подключиться к живой задаче и показать результат.
+        Готов подключиться к реальной задаче и показать результат.
     </p>
 </section>
 
 <section id="projects">
     <h3>Проекты</h3>
 
-    <div class="project">
-        <h4>Аналитические проекты</h4>
-        <p>Наведи курсор, чтобы выбрать направление</p>
+    <div id="sql-project" class="project">
+        <h4>SQL — Анализ оттока</h4>
+        <p>Построение витрины, расчёт churn, анализ триггеров.</p>
+        <a href="ССЫЛКА_SQL" target="_blank">Открыть проект</a>
+    </div>
 
-        <div class="modal">
-            <a href="ССЫЛКА_SQL" target="_blank">SQL</a>
-            <a href="ССЫЛКА_PYTHON" target="_blank">Python</a>
-            <a href="ССЫЛКА_BI" target="_blank">Power BI</a>
-        </div>
+    <div id="python-project" class="project">
+        <h4>Python — Продуктовые метрики</h4>
+        <p>EDA, retention, визуализация гипотез.</p>
+        <a href="ССЫЛКА_PYTHON" target="_blank">Открыть проект</a>
+    </div>
+
+    <div id="bi-project" class="project">
+        <h4>Power BI — Дашборд KPI</h4>
+        <p>Интерактивная аналитическая панель.</p>
+        <a href="ССЫЛКА_BI" target="_blank">Открыть проект</a>
     </div>
 </section>
 
@@ -77,8 +100,7 @@
     <a href="https://t.me/wokkitokki" target="_blank" class="btn">Telegram</a>
     <a href="mailto:okisen@vk.com" class="btn secondary">Email</a>
     <a href="https://github.com/okisen11/" target="_blank" class="btn secondary">GitHub</a>
-    <a href="https://ekaterinburg.hh.ru/resume/0f65d08eff101821220039ed1f63306b325030" target="_blank" class="btn">Резюме на HH</a>
-
+    <a href="ССЫЛКА_НА_HH" target="_blank" class="btn">Резюме на HH</a>
 </section>
 
 </body>
