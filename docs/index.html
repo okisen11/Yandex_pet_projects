@@ -4,24 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Миша Рожков | Аналитик данных</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
   <div class="logo">Mi.</div>
-  <div class="menu">
-    <a href="#hero">Главная</a>
-    <a href="#about">Обо мне</a>
-    <a href="#projects">Проекты</a>
-    <a href="#contacts">Контакты</a>
-  </div>
+
+  <ul class="menu">
+    <li><a href="#hero">Главная</a></li>
+    <li><a href="#about">Обо мне</a></li>
+
+    <li class="dropdown">
+      <a href="#projects">Проекты</a>
+      <ul class="dropdown-menu">
+        <li><a href="#sql">SQL</a></li>
+        <li><a href="#python">Python</a></li>
+        <li><a href="#powerbi">Power BI</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#contacts">Контакты</a>
+      <ul class="dropdown-menu">
+        <li><a href="https://t.me/wokkitokki" target="_blank">Telegram</a></li>
+        <li><a href="mailto:your@email.com">Email</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        <li><a href="#" target="_blank">HH</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
+
+<!-- HERO -->
 
 <section class="hero" id="hero">
   <img src="images/photo.jpg" alt="Фото">
+
   <h1>Миша <span>Рожков</span></h1>
   <p class="subtitle">Аналитик данных | Продуктовый аналитик</p>
 
@@ -33,60 +56,104 @@
   </div>
 </section>
 
+<!-- ABOUT -->
+
 <section class="about" id="about">
   <h2>Обо мне</h2>
+
   <p>
-    Мой путь — развитие в аналитике данных. Работаю с SQL, Python и BI-инструментами,
-    превращая цифры в понятные решения для бизнеса.
+    Развиваюсь в аналитике данных и работаю с SQL, Python и BI-инструментами.
+    Помогаю превращать данные в понятные бизнес-решения, нахожу точки роста
+    и оптимизирую процессы.
   </p>
 
   <div class="achievements">
-    <div class="card">+15% удержание клиентов</div>
-    <div class="card">Глубокая сегментация</div>
-    <div class="card">-20ч автоматизация</div>
-    <div class="card">Оптимизация воронки</div>
+    <div class="card">+15% рост удержания</div>
+    <div class="card">Глубокая сегментация клиентов</div>
+    <div class="card">-20ч в месяц на автоматизации</div>
+    <div class="card">Оптимизация воронки продаж</div>
   </div>
 </section>
+
+<!-- PROJECTS -->
 
 <section class="projects" id="projects">
   <h2>Проекты</h2>
 
-  <div class="project">
-    <div class="preview sql-bg">Оптимизация баз данных</div>
+  <div class="project" id="sql">
+    <div class="preview sql-bg">
+      Оптимизация баз данных
+    </div>
+
     <div class="content">
       <h3>SQL</h3>
-      <p>Сложные SQL-запросы, оптимизация производительности, аналитика больших объёмов данных.</p>
+      <p>
+        Разработка сложных SQL-запросов, оптимизация производительности,
+        работа с PostgreSQL, агрегации, CTE, метрики.
+      </p>
     </div>
   </div>
 
-  <div class="project reverse">
-    <div class="preview python-bg">Автоматизация с Python</div>
+  <div class="project reverse" id="python">
+    <div class="preview python-bg">
+      Автоматизация с Python
+    </div>
+
     <div class="content">
       <h3>Python</h3>
-      <p>Автоматизация ETL-процессов, анализ метрик с использованием pandas и numpy.</p>
+      <p>
+        Автоматизация ETL-процессов, анализ данных с pandas и numpy,
+        построение аналитических скриптов и обработка больших массивов данных.
+      </p>
     </div>
   </div>
 
-  <div class="project">
-    <div class="preview powerbi-bg">Аналитика в Power BI</div>
+  <div class="project" id="powerbi">
+    <div class="preview powerbi-bg">
+      Аналитика в Power BI
+    </div>
+
     <div class="content">
       <h3>Power BI</h3>
-      <p>Создание интерактивных дашбордов для визуализации KPI.</p>
+      <p>
+        Создание интерактивных дашбордов, визуализация KPI,
+        аналитика маркетинга и операционных показателей.
+      </p>
     </div>
   </div>
+
 </section>
+
+<!-- CONTACTS -->
 
 <section class="contacts" id="contacts">
   <h2>Контакты</h2>
+
   <div class="contact-buttons">
-    <a href="https://t.me/yourusername" target="_blank">Telegram</a>
+    <a href="https://t.me/wokkitokki" target="_blank">Telegram</a>
     <a href="mailto:your@email.com">Email</a>
     <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <a href="#">HH</a>
+    <a href="#" target="_blank">HH</a>
   </div>
 </section>
 
-</body>
-</html>
+<!-- Анимация появления секций -->
+
+<script>
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(section => {
+  observer.observe(section);
+});
+</script>
+
 </body>
 </html>
