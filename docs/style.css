@@ -177,6 +177,8 @@ ul {
     color: #3b82f6;
 }
 
+
+
 /* Dropdown контейнер */
 .dropdown {
     position: relative;
@@ -234,4 +236,41 @@ ul {
 .dropdown-content a:hover {
     background: #334155;
     color: #3b82f6;
+}
+
+/* Glow эффект для ссылок подменю */
+.dropdown-content a:hover {
+    background: #334155;
+    color: #3b82f6;
+    text-shadow: 0 0 8px #3b82f6;
+}
+
+/* Лёгкая тень для подменю */
+.dropdown-content {
+    position: absolute;
+    background: #1e293b;
+    min-width: 120px;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5); /* чуть сильнее, эффект “приподнятости” */
+    z-index: 1001;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Появление подменю */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Glow на кнопках верхнего меню при наведении */
+.navbar a:hover, .dropbtn:hover {
+    color: #3b82f6;
+    text-shadow: 0 0 6px #3b82f6;
 }
