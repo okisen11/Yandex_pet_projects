@@ -34,7 +34,6 @@
         <li><a href="https://t.me/wokkitokki" target="_blank">Telegram</a></li>
         <li><a href="mailto:your@email.com">Email</a></li>
         <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-        <li><a href="#" target="_blank">HH</a></li>
       </ul>
     </li>
   </ul>
@@ -43,7 +42,10 @@
 <!-- HERO -->
 
 <section class="hero" id="hero">
-  <img src="photo.jpg" alt="Фото">
+  <div class="photo-wrapper">
+    <img src="images/photo.jpg" alt="Фото">
+    <div class="paint-burst"></div>
+  </div>
 
   <h1>Миша <span>Рожков</span></h1>
   <p class="subtitle">Аналитик данных | Продуктовый аналитик</p>
@@ -63,15 +65,67 @@
 
   <p>
     Развиваюсь в аналитике данных и работаю с SQL, Python и BI-инструментами.
-    Помогаю превращать данные в понятные бизнес-решения, нахожу точки роста
-    и оптимизирую процессы.
+    Превращаю данные в понятные решения и точки роста для бизнеса.
   </p>
 
   <div class="achievements">
     <div class="card">+15% рост удержания</div>
     <div class="card">Глубокая сегментация клиентов</div>
-    <div class="card">-20ч в месяц на автоматизации</div>
+    <div class="card">-20ч автоматизации ежемесячно</div>
     <div class="card">Оптимизация воронки продаж</div>
+  </div>
+</section>
+
+<!-- HARD SKILLS -->
+
+<section class="hard-skills">
+  <h2>Hard Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skills-column">
+      <h3>SQL</h3>
+      <ul>
+        <li>JOIN / CTE</li>
+        <li>Оконные функции</li>
+        <li>Агрегации</li>
+        <li>Оптимизация запросов</li>
+        <li>PostgreSQL</li>
+      </ul>
+    </div>
+
+    <div class="skills-column">
+      <h3>Python</h3>
+      <ul>
+        <li>pandas</li>
+        <li>numpy</li>
+        <li>matplotlib</li>
+        <li>seaborn</li>
+        <li>ETL-скрипты</li>
+      </ul>
+    </div>
+
+    <div class="skills-column">
+      <h3>BI & Tools</h3>
+      <ul>
+        <li>Power BI</li>
+        <li>Excel</li>
+        <li>Базовая статистика</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="open-to-work">
+    <div class="otw-text">
+      <h3>Open to work</h3>
+      <p>
+        Я открыт к предложениям и готов применять свои навыки
+        для решения реальных задач.
+      </p>
+    </div>
+
+    <a href="#contacts" class="otw-button">Связаться со мной</a>
   </div>
 </section>
 
@@ -81,63 +135,38 @@
   <h2>Проекты</h2>
 
   <div class="project" id="sql">
-    <div class="preview sql-bg">
-      Оптимизация баз данных
-    </div>
-
+    <div class="preview sql-bg">Оптимизация баз данных</div>
     <div class="content">
       <h3>SQL</h3>
-      <p>
-        Разработка сложных SQL-запросов, оптимизация производительности,
-        работа с PostgreSQL, агрегации, CTE, метрики.
-      </p>
+      <p>Сложные запросы, оконные функции, оптимизация производительности.</p>
     </div>
   </div>
 
   <div class="project reverse" id="python">
-    <div class="preview python-bg">
-      Автоматизация с Python
-    </div>
-
+    <div class="preview python-bg">Автоматизация с Python</div>
     <div class="content">
       <h3>Python</h3>
-      <p>
-        Автоматизация ETL-процессов, анализ данных с pandas и numpy,
-        построение аналитических скриптов и обработка больших массивов данных.
-      </p>
+      <p>ETL, автоматизация аналитики, обработка данных.</p>
     </div>
   </div>
 
   <div class="project" id="powerbi">
-    <div class="preview powerbi-bg">
-      Аналитика в Power BI
-    </div>
-
+    <div class="preview powerbi-bg">Power BI аналитика</div>
     <div class="content">
       <h3>Power BI</h3>
-      <p>
-        Создание интерактивных дашбордов, визуализация KPI,
-        аналитика маркетинга и операционных показателей.
-      </p>
+      <p>Дашборды, визуализация KPI и бизнес-метрик.</p>
     </div>
   </div>
-
 </section>
-
-<!-- CONTACTS -->
 
 <section class="contacts" id="contacts">
   <h2>Контакты</h2>
-
   <div class="contact-buttons">
     <a href="https://t.me/wokkitokki" target="_blank">Telegram</a>
     <a href="mailto:your@email.com">Email</a>
     <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    <a href="#" target="_blank">HH</a>
   </div>
 </section>
-
-<!-- Анимация появления секций -->
 
 <script>
 const sections = document.querySelectorAll("section");
@@ -152,6 +181,11 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(section => {
   observer.observe(section);
+});
+
+// параллакс
+window.addEventListener("scroll", () => {
+  document.body.style.backgroundPositionY = window.scrollY * 0.3 + "px";
 });
 </script>
 
