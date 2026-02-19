@@ -152,3 +152,39 @@ ul {
 .secondary:hover {
     background: #475569;
 }
+
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #1e293b;
+    min-width: 180px;
+    border-radius: 8px;
+    padding: 10px 0;
+    top: 35px;
+    left: 0;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: #334155;
+    color: #3b82f6;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
