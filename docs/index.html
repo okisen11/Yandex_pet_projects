@@ -1,17 +1,65 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <title>HTML5</title>
-  <!--[if IE]>
-   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <style>
-   article, aside, details, figcaption, figure, footer,header,
-   hgroup, menu, nav, section { display: block; }
-  </style>
- </head>
- <body>
-  <p>Привет, мир</p>
- </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Миша | Data Analyst</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero">
+        <img src="photo.jpg" alt="Миша" class="avatar">
+        <h1>Миша Иванов</h1>
+        <h2>Data Analyst | SQL • Python • Power BI</h2>
+    </section>
+
+    <section class="about">
+        <h3>Обо мне</h3>
+        <p>
+            Аналитик данных с опытом работы в банковском секторе.
+            Работаю с SQL, Python и Power BI.
+            Интересуюсь продуктовой аналитикой, метриками и оптимизацией процессов.
+        </p>
+    </section>
+
+    <section class="skills">
+        <h3>Hard Skills</h3>
+        <ul>
+            <li>SQL (оконные функции, агрегации, построение витрин)</li>
+            <li>Python (pandas, numpy, matplotlib)</li>
+            <li>Power BI (дашборды, DAX, визуализация)</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h3>Проекты</h3>
+
+        <div class="project">
+            <h4>SQL — Анализ оттока клиентов</h4>
+            <p>Построение витрины данных и расчет показателей churn.</p>
+            <a href="ССЫЛКА_НА_РЕПО_SQL" target="_blank">Смотреть проект</a>
+        </div>
+
+        <div class="project">
+            <h4>Python — Анализ продуктовых метрик</h4>
+            <p>EDA, визуализация и расчет retention.</p>
+            <a href="ССЫЛКА_НА_РЕПО_PYTHON" target="_blank">Смотреть проект</a>
+        </div>
+
+        <div class="project">
+            <h4>Power BI — Дашборд по продажам</h4>
+            <p>Интерактивная аналитическая панель с KPI.</p>
+            <a href="ССЫЛКА_НА_ДЕМО_ИЛИ_GITHUB" target="_blank">Смотреть проект</a>
+        </div>
+
+    </section>
+
+    <section class="contacts">
+        <h3>Контакты</h3>
+        <p>Email: example@mail.com</p>
+        <p>Telegram: @username</p>
+        <a href="ССЫЛКА_НА_HH" target="_blank" class="btn">Смотреть резюме на HH</a>
+    </section>
+
+</body>
 </html>
