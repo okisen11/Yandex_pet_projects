@@ -2,63 +2,106 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Миша | Data Analyst</title>
+    <title>Миша Рожков | Аналитик</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <section class="hero">
-        <img src="photo.jpg" alt="Миша" class="avatar">
-        <h1>Миша Иванов</h1>
-        <h2>Data Analyst | SQL • Python • Power BI</h2>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <a href="#hero">Главная</a>
+        <a href="#projects">Проекты</a>
+        <a href="#about">Обо мне</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <!-- Главный экран -->
+    <section id="hero" class="hero">
+        <img src="photo.jpg" alt="Миша Рожков" class="avatar">
+        <h1>Миша Рожков</h1>
+        <h2>Продуктовый аналитик | BI аналитик</h2>
     </section>
 
-    <section class="about">
-        <h3>Обо мне</h3>
-        <p>
-            Аналитик данных с опытом работы в банковском секторе.
-            Работаю с SQL, Python и Power BI.
-            Интересуюсь продуктовой аналитикой, метриками и оптимизацией процессов.
-        </p>
-    </section>
-
-    <section class="skills">
-        <h3>Hard Skills</h3>
-        <ul>
-            <li>SQL (оконные функции, агрегации, построение витрин)</li>
-            <li>Python (pandas, numpy, matplotlib)</li>
-            <li>Power BI (дашборды, DAX, визуализация)</li>
-        </ul>
-    </section>
-
-    <section class="projects">
+    <!-- Проекты -->
+    <section id="projects">
         <h3>Проекты</h3>
 
         <div class="project">
-            <h4>SQL — Анализ оттока клиентов</h4>
-            <p>Построение витрины данных и расчет показателей churn.</p>
-            <a href="ССЫЛКА_НА_РЕПО_SQL" target="_blank">Смотреть проект</a>
+            <h4>SQL — Анализ оттока B2B клиентов</h4>
+            <p>Система выявления триггеров оттока, расчёт churn и выручки.</p>
+            <a href="ССЫЛКА_НА_РЕПО_SQL" target="_blank">Открыть проект</a>
         </div>
 
         <div class="project">
             <h4>Python — Анализ продуктовых метрик</h4>
-            <p>EDA, визуализация и расчет retention.</p>
-            <a href="ССЫЛКА_НА_РЕПО_PYTHON" target="_blank">Смотреть проект</a>
+            <p>EDA, расчёт retention, визуализация гипотез.</p>
+            <a href="ССЫЛКА_НА_РЕПО_PYTHON" target="_blank">Открыть проект</a>
         </div>
 
         <div class="project">
-            <h4>Power BI — Дашборд по продажам</h4>
-            <p>Интерактивная аналитическая панель с KPI.</p>
-            <a href="ССЫЛКА_НА_ДЕМО_ИЛИ_GITHUB" target="_blank">Смотреть проект</a>
+            <h4>Power BI — Дашборд по выручке и оттоку</h4>
+            <p>Интерактивная BI-панель с ключевыми KPI.</p>
+            <a href="ССЫЛКА_НА_РЕПО_BI" target="_blank">Открыть проект</a>
         </div>
 
     </section>
 
-    <section class="contacts">
+    <!-- Обо мне -->
+    <section id="about">
+        <h3>Обо мне</h3>
+
+        <p>
+            Персональный менеджер по работе с корпоративными клиентами (B2B) в банковском секторе.
+            Отвечаю за развитие портфеля, удержание клиентов и рост выручки.
+        </p>
+
+        <p>
+            Параллельно развиваюсь в аналитике данных: использую SQL для выгрузки и обработки данных,
+            выполняю Ad-hoc задачи под бизнес-запросы, создаю дашборды в Power BI.
+            Аналитику применяю как инструмент принятия решений в работе с клиентами.
+        </p>
+
+        <h4>Ключевые достижения</h4>
+        <ul>
+            <li>Повысил удержание клиентов на 15% через систему раннего выявления триггеров оттока.</li>
+            <li>Разработал сегментацию B2B-клиентов по продуктовым показателям и видам деятельности.</li>
+            <li>Автоматизировал отчётность, сократив ручной сбор данных более чем на 20 часов в месяц.</li>
+            <li>Инициировал изменения в обучении отдела продаж на основе анализа воронки.</li>
+        </ul>
+
+        <h4>Hard Skills</h4>
+        <ul>
+            <li>SQL: сложные запросы, JOIN, CTE, агрегации, расчёт метрик.</li>
+            <li>Python: pandas, numpy, seaborn, matplotlib.</li>
+            <li>Power BI: построение дашбордов и KPI.</li>
+            <li>Excel: сводные таблицы, формулы, подготовка данных.</li>
+            <li>Базовая статистика: A/B тесты, корреляция, доверительные интервалы.</li>
+        </ul>
+
+        <p>
+            Быстро погружаюсь в специфику бизнеса и автоматизирую рутинные процессы.
+            Декомпозирую цели в проверяемые гипотезы и метрики.
+            Системный, инициативный, умею работать автономно.
+        </p>
+
+        <p class="highlight">
+            Ищу junior-позицию в аналитике данных / продуктовой аналитике.
+            Готов выполнить живую задачу, актуальную для вашей команды.
+        </p>
+
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts">
         <h3>Контакты</h3>
-        <p>Email: example@mail.com</p>
-        <p>Telegram: @username</p>
-        <a href="ССЫЛКА_НА_HH" target="_blank" class="btn">Смотреть резюме на HH</a>
+        <p>Telegram: @Wokkitokki</p>
+        <p>Email: okisen@vk.com</p>
+        <p>
+            <a href="https://github.com/okisen11/" target="_blank">GitHub портфолио</a>
+        </p>
+        <p>
+            <a href="ССЫЛКА_НА_HH" target="_blank" class="btn">Резюме на HH</a>
+        </p>
     </section>
 
 </body>
