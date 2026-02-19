@@ -153,25 +153,51 @@ ul {
     background: #475569;
 }
 
-/* Dropdown */
+/* Навигация */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+}
 
+.navbar a, .dropbtn {
+    color: #94a3b8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .dropbtn:hover {
+    color: #3b82f6;
+}
+
+/* Dropdown контейнер */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+/* Подменю */
 .dropdown-content {
     display: none;
     position: absolute;
     background: #1e293b;
     min-width: 180px;
     border-radius: 8px;
-    padding: 10px 0;
-    top: 35px;
+    padding: 5px 0;
+    top: 35px; /* смещение под родительскую кнопку */
     left: 0;
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    z-index: 1001; /* выше navbar */
 }
 
+/* Ссылки в подменю */
 .dropdown-content a {
     display: block;
     padding: 10px 15px;
@@ -185,6 +211,7 @@ ul {
     color: #3b82f6;
 }
 
+/* Показ подменю только при наведении на контейнер */
 .dropdown:hover .dropdown-content {
     display: block;
 }
