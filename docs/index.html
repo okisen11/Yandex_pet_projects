@@ -43,8 +43,8 @@
 
 <section class="hero" id="hero">
   <div class="photo-wrapper">
-    <img src="images/photo.jpg" alt="Фото">
-    <div class="paint-burst"></div>
+    <img src="photo.jpg" alt="Фото">
+    <div class="paint-container"></div>
   </div>
 
   <h1>Миша <span>Рожков</span></h1>
@@ -191,3 +191,45 @@ window.addEventListener("scroll", () => {
 
 </body>
 </html>
+
+<script>
+const wrapper = document.querySelector(".photo-wrapper");
+const container = document.querySelector(".paint-container");
+
+wrapper.addEventListener("mouseenter", () => {
+
+  for (let i = 0; i < 18; i++) {
+
+    const drop = document.createElement("div");
+    drop.classList.add("paint-drop");
+
+    const colors = [
+      "#7b61ff",
+      "#4f8cff",
+      "#c084fc",
+      "#a0c4ff"
+    ];
+
+    drop.style.background =
+      colors[Math.floor(Math.random() * colors.length)];
+
+    const angle = Math.random() * 2 * Math.PI;
+    const distance = 120 + Math.random() * 80;
+
+    const x = Math.cos(angle) * distance + "px";
+    const y = Math.sin(angle) * distance + "px";
+
+    drop.style.setProperty("--x", x);
+    drop.style.setProperty("--y", y);
+
+    drop.style.left = "50%";
+    drop.style.top = "50%";
+
+    container.appendChild(drop);
+
+    setTimeout(() => {
+      drop.remove();
+    }, 900);
+  }
+});
+</script>
