@@ -6,11 +6,14 @@
   <title>Миша Рожков | Аналитик данных</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<div class="bg-blob blob1"></div>
+<div class="bg-blob blob2"></div>
 
 <nav>
   <div class="logo">Mi.</div>
@@ -18,28 +21,19 @@
   <ul class="menu">
     <li><a href="#hero">Главная</a></li>
     <li><a href="#about">Обо мне</a></li>
-
-    <li class="dropdown">
-      <a href="#projects">Проекты</a>
-      <ul class="dropdown-menu">
-        <li><a href="#sql">SQL</a></li>
-        <li><a href="#python">Python</a></li>
-        <li><a href="#powerbi">Power BI</a></li>
-      </ul>
-    </li>
+    <li><a href="#projects">Проекты</a></li>
 
     <li class="dropdown">
       <a href="#contacts">Контакты</a>
       <ul class="dropdown-menu">
         <li><a href="https://t.me/wokkitokki" target="_blank">Telegram</a></li>
         <li><a href="mailto:your@email.com">Email</a></li>
-        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+        <li><a href="https://github.com/okisen11/Yandex_pet_projects/tree/main" target="_blank">GitHub</a></li>
+        <li><a href="ССЫЛКА_НА_HH" target="_blank">HH</a></li>
       </ul>
     </li>
   </ul>
 </nav>
-
-<!-- HERO -->
 
 <section class="hero" id="hero">
   <div class="photo-wrapper">
@@ -51,77 +45,72 @@
   <p class="subtitle">Аналитик данных | Продуктовый аналитик</p>
 
   <div class="tags">
-    <span class="tag sql">SQL</span>
-    <span class="tag python">Python</span>
-    <span class="tag powerbi">Power BI</span>
-    <span class="tag excel">Excel</span>
+    <span class="tag">SQL</span>
+    <span class="tag">Python</span>
+    <span class="tag">Power BI</span>
+    <span class="tag">Excel</span>
   </div>
 </section>
-
-<!-- ABOUT -->
 
 <section class="about" id="about">
-  <h2>Обо мне</h2>
+  <h2 class="section-title">Обо мне</h2>
 
-  <p>
-    Развиваюсь в аналитике данных и работаю с SQL, Python и BI-инструментами.
-    Быстро погружаюсь в специфику бизнеса и автоматизирую рутинные процессы.
-    Умею декомпозировать бизнес-цели в проверяемые гипотезы и метрики. 
-    Обладаю системным подходом, выраженной инициативностью и способностью к автономной работе
+  <p class="about-text">
+    Работаю на стыке аналитики и продукта. Помогаю находить точки роста,
+    строить метрики и превращать данные в понятные решения для бизнеса.
   </p>
-
-  <div class="achievements">
-    <div class="card">+15% рост удержания</div>
-    <div class="card">Глубокая сегментация клиентов</div>
-    <div class="card">-20ч автоматизации ежемесячно</div>
-    <div class="card">Оптимизация воронки продаж</div>
-  </div>
-</section>
-
-<!-- HARD SKILLS -->
-
-<section class="hard-skills">
-  <h2>Hard Skills</h2>
 
   <div class="skills-grid">
 
-    <div class="skills-column">
-      <h3>SQL</h3>
+    <div class="skill-column">
+      <div class="skill-tag sql">SQL</div>
       <ul>
         <li>JOIN / CTE</li>
         <li>Оконные функции</li>
         <li>Агрегации</li>
-        <li>Оптимизация запросов</li>
+        <li>Оптимизация</li>
       </ul>
     </div>
 
-    <div class="skills-column">
-      <h3>Python</h3>
+    <div class="skill-column">
+      <div class="skill-tag python">Python</div>
       <ul>
-        <li>pandas</li>
-        <li>numpy</li>
-        <li>matplotlib</li>
-        <li>seaborn</li>
+        <li>Pandas</li>
+        <li>NumPy</li>
+        <li>Matplotlib</li>
+        <li>Автоматизация</li>
       </ul>
     </div>
 
-    <div class="skills-column">
-      <h3>BI & Tools</h3>
+    <div class="skill-column">
+      <div class="skill-tag powerbi">Power BI</div>
       <ul>
-        <li>Power BI</li>
-        <li>Excel</li>
-        <li>Базовая статистика</li>
+        <li>DAX</li>
+        <li>Power Query</li>
+        <li>Моделирование</li>
+        <li>Dashboards</li>
+      </ul>
+    </div>
+
+    <div class="skill-column">
+      <div class="skill-tag excel">Excel</div>
+      <ul>
+        <li>Сводные таблицы</li>
+        <li>INDEX / VLOOKUP</li>
+        <li>Power Pivot</li>
+        <li>Очистка данных</li>
       </ul>
     </div>
 
   </div>
 
   <div class="open-to-work">
-    <div class="otw-text">
-      <h3>Open to work</h3>
-      <p>
-        Я открыт к предложениям и готов применять свои навыки
-        для решения реальных задач.
+    <div>
+      <h3><span class="search-icon">🔍</span> Open to work</h3>
+      <p class="junior">Ищу junior позицию</p>
+      <p class="otw-text">
+        Открыт к предложениям<br>
+        и готов применять навыки в реальных задачах
       </p>
     </div>
 
@@ -129,38 +118,33 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
-
 <section class="projects" id="projects">
-  <h2>Проекты</h2>
+  <h2 class="section-title">Проекты</h2>
 
-  <div class="project" id="sql">
-    <div class="preview sql-bg">Оптимизация баз данных</div>
-    <div class="content">
-      <h3>SQL</h3>
-      <p>Сложные запросы, оконные функции, оптимизация производительности.</p>
+  <div class="project-row">
+    <div class="project-card">Анализ оттока</div>
+    <div class="project-info">
+      <h3>Анализ оттока клиентов</h3>
+      <p>Исследование поведения пользователей и выявление факторов churn.</p>
+      <p class="stack">SQL · Python · Power BI</p>
+      <a href="#" class="case-link">Посмотреть кейс →</a>
     </div>
   </div>
 
-  <div class="project reverse" id="python">
-    <div class="preview python-bg">Автоматизация с Python</div>
-    <div class="content">
-      <h3>Python</h3>
-      <p>ETL, автоматизация аналитики, обработка данных.</p>
+  <div class="project-row reverse">
+    <div class="project-card">Продуктовая аналитика</div>
+    <div class="project-info">
+      <h3>Анализ воронки продукта</h3>
+      <p>Расчёт конверсий и поиск точек роста.</p>
+      <p class="stack">SQL · Excel · BI</p>
+      <a href="#" class="case-link">Посмотреть кейс →</a>
     </div>
   </div>
 
-  <div class="project" id="powerbi">
-    <div class="preview powerbi-bg">Power BI аналитика</div>
-    <div class="content">
-      <h3>Power BI</h3>
-      <p>Дашборды, визуализация KPI и бизнес-метрик.</p>
-    </div>
-  </div>
 </section>
 
 <section class="contacts" id="contacts">
-  <h2>Контакты</h2>
+  <h2 class="section-title">Контакты</h2>
   <div class="contact-buttons">
     <a href="https://t.me/wokkitokki" target="_blank">Telegram</a>
     <a href="mailto:your@email.com">Email</a>
